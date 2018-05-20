@@ -4,13 +4,13 @@ import 'package:moviesflutter/redux/state.dart';
 
 
 AppState appStateReducers(AppState state, dynamic action) {
-  if (action is AddMovieAction){
-    return addMovie(state.movies, action);
+  if (action is FetchMoviesAction){
+    return fetchMovies(state);
   }
   return state;
 }
 
-AppState addMovie(List<Movie> movies, AddMovieAction action){
-  return new AppState(List.from(movies)..add(action.movie));
+AppState fetchMovies(AppState state){
+  return new AppState(state.movies);
 
 }

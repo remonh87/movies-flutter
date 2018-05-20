@@ -11,7 +11,8 @@ void main() {
   test('Should increase the movielist with the newly added movie', () {
     Movie movie = new Movie('Spiderman');
     List<Movie> movies = new List<Movie>();
-    AddMovieAction action = AddMovieAction(movie);
+    movies.add(movie)
+    FetchMoviesAction action = FetchMoviesAction();
     AppState state = new AppState(movies);
     AppState newState = appStateReducers(state ,action);
     expect(newState.movies.length, 1);
