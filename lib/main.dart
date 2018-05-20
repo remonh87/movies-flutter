@@ -3,7 +3,7 @@ import 'package:moviesflutter/redux/state.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
 import 'package:moviesflutter/redux/reducers/movie_reducers.dart';
-import 'package:moviesflutter/popular_movies_page.dart';
+import 'package:moviesflutter/pages/popular_movies_page.dart';
 
 
 void main() => runApp(MoviesApp());
