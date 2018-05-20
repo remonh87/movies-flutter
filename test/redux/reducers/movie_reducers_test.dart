@@ -8,10 +8,10 @@ import 'package:moviesflutter/redux/state.dart';
 void main() {
 
 
-  test('Should increase the movielist with the newly added movie', () {
+  test('Should return the movielist from appstate when dispatching fetchmovies', () {
     Movie movie = new Movie('Spiderman');
     List<Movie> movies = new List<Movie>();
-    movies.add(movie)
+    movies.add(movie);
     FetchMoviesAction action = FetchMoviesAction();
     AppState state = new AppState(movies);
     AppState newState = appStateReducers(state ,action);

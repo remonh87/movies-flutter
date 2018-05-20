@@ -12,4 +12,10 @@ void main() {
     AppState state = new AppState(movies);
     expect(state.movies.length, 1);
   });
+
+  test('Default factory should return 2 movies', () {
+    AppState state = AppState.initial();
+    expect(state.movies.length, 2);
+  });
+
 }
