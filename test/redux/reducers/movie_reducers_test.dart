@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:moviesflutter/domain/Movie.dart';
 
-import 'package:moviesflutter/redux/actions/add_movie_action.dart';
+import 'package:moviesflutter/redux/actions/movie_actions.dart';
 import 'package:moviesflutter/redux/reducers/movie_reducers.dart';
 import 'package:moviesflutter/redux/state.dart';
 

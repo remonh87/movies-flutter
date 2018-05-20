@@ -1,7 +1,5 @@
-import 'package:moviesflutter/domain/Movie.dart';
-import 'package:moviesflutter/redux/actions/add_movie_action.dart';
+import 'package:moviesflutter/redux/actions/movie_actions.dart';
 import 'package:moviesflutter/redux/state.dart';
-
 
 AppState appStateReducers(AppState state, dynamic action) {
   if (action is FetchMoviesAction){
